@@ -9,7 +9,7 @@ def test_ingredient():
 
     # Teste de inicialização
     assert ingredient.name == 'camarão'
-    assert ingredient.restrictions == { 
+    assert ingredient.restrictions == {
             Restriction.ANIMAL_MEAT,
             Restriction.SEAFOOD,
             Restriction.ANIMAL_DERIVED
