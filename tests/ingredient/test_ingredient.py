@@ -9,7 +9,11 @@ def test_ingredient():
 
     # Teste de inicialização
     assert ingredient.name == 'camarão'
-    assert ingredient.restrictions == {Restriction.SEAFOOD}
+    assert ingredient.restrictions == { 
+            Restriction.ANIMAL_MEAT,
+            Restriction.SEAFOOD,
+            Restriction.ANIMAL_DERIVED
+            }
 
     # Teste de representação
     assert repr(ingredient2) == "Ingredient('creme de leite')"
