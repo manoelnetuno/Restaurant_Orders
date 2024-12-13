@@ -46,7 +46,7 @@ def test_dish():
     assert Dish.get_restrictions(dish) == expected_restrictions
 
     # Teste de preço inválido
-    with pytest.raises(ValueError, match="Dish price must be greater than zero."):
+    with pytest.raises(ValueError, match="Dish price must be greater then zero."):
         Dish("lasanha de presunto", 0)
 
     # Teste de tipo de preço inválido

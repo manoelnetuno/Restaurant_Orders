@@ -13,7 +13,7 @@ class Dish:
         if not isinstance(price, Real):
             raise TypeError("Dish price must be float.")
         if price <= 0:
-            raise ValueError("Dish price must be greater than zero.")
+            raise ValueError("Dish price must be greater then zero.")
 
         self.price = price
         self.recipe: Recipe = {}
