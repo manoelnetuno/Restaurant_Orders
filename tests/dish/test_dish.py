@@ -1,4 +1,4 @@
-from src.models.dish import Dish  
+from src.models.dish import Dish
 from src.models.ingredient import Ingredient, Restriction
 from numbers import Real
 import pytest
@@ -16,7 +16,7 @@ def test_dish():
     assert dish.recipe == {}
 
     # Teste de representação
-    assert repr(dish) == "Dish('lasanha de presunto', R$ 25.90)"
+    assert repr(dish) == "Dish('lasanha de presunto', R$25.90)"
 
     # Teste de igualdade
     assert dish == dish2

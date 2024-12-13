@@ -19,7 +19,7 @@ class Dish:
         self.recipe: Recipe = {}
 
     def __repr__(self) -> str:
-        return f"Dish('{self.name}', R${self.price: .2f})"
+        return f"Dish('{self.name}', R${self.price:.2f})"
 
     def __eq__(self, other) -> bool:
         return self.__repr__() == other.__repr__()
