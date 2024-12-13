@@ -1,4 +1,4 @@
-from src.models.dish import Dish  # noqa: F401, E261, E501
+from src.models.dish import Dish  
 from src.models.ingredient import Ingredient, Restriction
 from numbers import Real
 import pytest
